@@ -4,8 +4,6 @@
   "description": "v1.0 - Simple Website using Node.js\r ===================================",
   "main": "index.js",
     "scripts": {
-        "build": "echo \"No build specified\" && exit 1",
-        "test": "echo \"No test specified\" && exit 1",
         "start": "node index.js"
     },
     "repository": {
