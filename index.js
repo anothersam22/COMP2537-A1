@@ -340,7 +340,7 @@ app.post("/loggingin", async (req, res) => {
             li { color: white; }
 
   </style>
-    <h1>Invalid username or password</h1>
+    <h1>Invalid username</h1>
     <br>
     <a href='/'>home</a>
     <br>
@@ -373,7 +373,7 @@ app.post("/loggingin", async (req, res) => {
             li { color: white; }
 
   </style>
-    <h1>Invalid username or password</h1>
+    <h1>Invalid password</h1>
     <br>
     <a href='/'>home</a>
     <br>
