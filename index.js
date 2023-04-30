@@ -167,6 +167,7 @@ app.get("/about", (req, res) => {
     "<h1 style='color:" +
       color +
       ";'>SAM TAM [SET 2E DTC]  COMP2537: ASSIGNMENT 1 </h1>"
+      + "<br> <a href='/'>home</a>"
   );
 });
 
