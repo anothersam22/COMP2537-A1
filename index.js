@@ -78,7 +78,7 @@ app.get("/", (req, res) => {
     <br>
     <a href='/contact'>contact</a>
     <br>
-    <a href='/createUser'>create user</a>
+    <a href='/createUser'>sign up</a>
     <br>
     <a href='/login'>login</a>
     <br>
@@ -166,8 +166,8 @@ app.get("/about", (req, res) => {
   res.send(
     "<h1 style='color:" +
       color +
-      ";'>SAM TAM [SET 2E DTC]  COMP2537: ASSIGNMENT 1 </h1>"
-      + "<br> <a href='/'>home</a>"
+      ";'>SAM TAM [SET 2E DTC]  COMP2537: ASSIGNMENT 1 </h1>" +
+      "<br> <a href='/'>home</a>"
   );
 });
 
