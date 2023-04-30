@@ -401,7 +401,7 @@ app.use(express.static(path.join(__dirname, "img")));
 
 app.get("/members", (req, res) => {
   if (!req.session.username) {
-    res.redirect("/login");
+    res.redirect("/");
     return;
   }
 
