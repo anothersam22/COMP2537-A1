@@ -537,7 +537,7 @@ app.use(express.static(__dirname + "/public"));
 
 app.get("*", (req, res) => {
   res.status(404);
-  res.send("Page not found - 404");
+  res.send("MY 404 !!!  Page not found - 404");
 });
 
 app.listen(port, () => {
