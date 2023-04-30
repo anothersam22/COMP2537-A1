@@ -213,7 +213,7 @@ app.get("/createUser", (req, res) => {
        h1 { color: white; }
             a { color: white; }
             li { color: white; }
-            input { color: white; }
+     
 
   </style>
     <h1>create user<h1>
@@ -223,6 +223,10 @@ app.get("/createUser", (req, res) => {
     <input name= 'email' type='text' placeholder='email'>
     <button>Submit</button>
     </form>
+       <br>
+    <a href='/'>home</a>
+    <br>
+    <a href='/login'>login</a>
     `;
   res.send(html);
 });
