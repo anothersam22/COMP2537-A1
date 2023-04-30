@@ -163,7 +163,11 @@ app.get("/nosql-injection", async (req, res) => {
 app.get("/about", (req, res) => {
   var color = req.query.color;
 
-  res.send("<h1 style='color:" + color + ";'>SAM SET 2E DTC</h1>");
+  res.send(
+    "<h1 style='color:" +
+      color +
+      ";'>SAM TAM [SET 2E DTC]  COMP2537: ASSIGNMENT 1 </h1>"
+  );
 });
 
 app.get("/contact", (req, res) => {
