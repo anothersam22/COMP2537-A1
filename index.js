@@ -389,69 +389,10 @@ app.get("/loggedin", (req, res) => {
   if (!req.session.authenticated) {
     res.redirect("/login");
   }
-  // var html = `
-  //   You are logged in!
-
-  //   <style>body{
-  //     background-image: url("img/Ana-de-Armas-in-Blade-Runner-2049.webp");
-  //   }
-  //   </style>
-
-  //   <br>
-  //   <a href='/logout'>logout</a>
-  //   `;
-  // res.send(html);
-
-  // DNU:
-  // res.sendFile(__dirname + "/members.html");
-
-  // redirect to protected page
   res.redirect("/members");
 });
 
-// //send to members page
-// app.get('/members',function(req,res) {
-//   res.sendFile('members.html');
-// });
-//---------------------------------------------
-// // version 1:
-// app.get("/members", (req, res) => {
-//   if (!req.session.username) {
-//     res.redirect("/login");
-//     return;
-//   }
-
-//   const imgDir = path.join(__dirname, "img");
-//   fs.readdir(imgDir, (err, files) => {
-//     if (err) {
-//       console.error(err);
-//       res.status(500).send("Server error");
-//       return;
-//     }
-
-//     const randomIndex = Math.floor(Math.random() * files.length);
-//     const randomFile = files[randomIndex];
-//     const filePath = path.join(imgDir, randomFile);
-
-//     res.sendFile(filePath);
-//     // Add logout link to response
-//     res.send(`
-//       <html>
-//         <head>
-//           <title>Members Only</title>
-//         </head>
-//         <body>
-//           <h1>Welcome, ${req.session.username}!</h1>
-//           <img src="${filePath}" />
-//           <br />
-//           <a href="/logout">Logout</a>
-//         </body>
-//       </html>
-//     `);
-//   });
-// });
-
-// version 2:
+// random background image from img folder
 app.use(express.static(path.join(__dirname, "img")));
 
 app.get("/members", (req, res) => {
